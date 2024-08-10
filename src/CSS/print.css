@@ -1,0 +1,239 @@
+.custom-logo {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px; /* Adjust this based on your logo's aspect ratio */
+}
+.nav-item a:hover{
+   /* background-color: #8a2be2; */
+   color: red;
+
+}
+.UPIMG{
+    position: absolute;
+    width: 3%;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-right: 15px;
+    margin-top: 150px;
+}
+.col-md-6 p{
+ border:solid;
+ border-top: 50px;
+ border-bottom: 0;
+ border-right: 0;
+ padding-left: 32px;
+
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 5%;
+}  
+
+ .card {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    max-width: 100%;  
+}
+.card h2 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    color: #2b71f5;
+}
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #fd2ecd;
+}
+.background{
+  margin-top: 60px;
+} 
+   /* Animated background image */
+   #services {
+    background: url('./../../public/IMG/portfolio/1\ to\ 4\ -4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundAnimation 30s ease infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Dark overlay */
+#services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1;
+}
+
+    /* Background image for portfolio section */
+
+#portfolio {
+        background: url('../../public/IMG/background-photo/coresol.png') no-repeat center center;
+        background-size: cover;
+        position: relative;
+        padding: 60px 0;
+    }
+
+    /* Dark overlay */
+#portfolio::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        z-index: -1;
+}
+
+    /* Text color */
+    #portfolio h1 {
+        color: #ebebeb;
+    }
+
+    /* Button and image styling */
+    .button-container .btn {
+        background-color: #3159f9;
+        color: #000000;
+        border-radius: 10px;
+    }
+
+    .button-container .btn:hover {
+        background-color:#ecfd2e
+    }
+
+    .photo-display {
+        position: relative;
+        z-index: 1;
+    }
+
+    .photo {
+        border: 5px solid #f94242;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /*  */
+  
+    
+    .animate-charcter {
+        font-size: calc(16px + 2vw); /* Responsive font size */
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #fbf12c 3%,
+            #003079 29%,
+            #ff13ef 67%,
+            #ff8800 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 3s linear infinite;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0 auto; /* Centering */
+        width: max-content; /* Adjust width to the content */
+    }
+
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    .print {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full viewport height */
+        background: #f0f0f0;
+    }
+
+    .container01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        top: -80px;
+    }
+    
+    /* Responsive Font Size Adjustments */
+    /* @media (min-width: 576px) {
+        .animate-charcter {
+            font-size: 60px; /* Adjust font size for sm (small) screens and up 
+        }
+    }
+    @media (min-width: 312px) {
+        .animate-charcter {
+            font-size: 20px; /* Adjust font size for sm (small) screens and up 
+            /* margin-right: 0px; */
+            /* width: 205px; */
+            /* border: solid; */
+            /* position: absolute; 
+            margin-top: 150px;
+            margin-left: -100px;
+            border:5px solid;
+        }
+        
+    }
+    @media (min-width: 768px) {
+        .animate-charcter {
+            font-size: 70px; /* Adjust font size for md (medium) screens and up 
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .animate-charcter {
+            font-size: 80px; /* Adjust font size for lg (large) screens and up 
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .animate-charcter {
+            font-size: 45px; /* Adjust font size for xl (extra-large) screens and up 
+        }
+    }
+    .div{
+        position: absolute;
+        top: 0;
+        left: 30%;
+        margin-top: 15%;
+         margin-left: 165px; 
+    }
+    .print{
+        position: absolute;
+        top: 0;
+        height: 20x;
+     
+        height: 29%;
+        width: 71%;
+        margin-left: 130px;
+    } */

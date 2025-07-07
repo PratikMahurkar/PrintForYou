@@ -1,0 +1,316 @@
+.custom-logo {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px; /* Adjust this based on your logo's aspect ratio */
+}
+.nav-link:hover{
+    color: red;
+
+}
+
+.UPIMG{
+    position: absolute;
+    width: 3%;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-right: 15px;
+    margin-top: 150px;
+}
+.col-md-6 p{
+ border:solid;
+ border-top: 50px;
+ border-bottom: 0;
+ border-right: 0;
+ padding-left: 32px;
+}
+
+/* .card {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    max-width: 100%;  
+}
+.card h2 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    color: #2b71f5;
+}
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #fd2ecd;
+} */
+.background{
+  margin-top: 60px;
+} 
+   /* Animated background image */
+   #services {
+    background: url('./../../public/IMG/portfolio/1\ to\ 4\ -4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundAnimation 30s ease infinite;
+    position: relative;
+    /* z-index: 1; */ 
+    backdrop-filter: blur(10px);
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; } 
+}
+
+/* Dark overlay */
+#services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1;
+}
+   /* Background image for portfolio section */
+
+#portfolio {
+        background: url('../../public/IMG/background-photo/coresoll.png') no-repeat center center; 
+        background-size: cover;
+        position: relative;
+        padding: 60px 0;
+  }
+
+ /* Dark overlay */
+
+#portfolio::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        z-index: -1;
+}
+    /* Text color */
+    #portfolio h1 {
+        color: #000000;
+    }
+
+    .photo-display {
+        position: relative;
+        z-index: 1;
+    }
+
+    .photo {
+        border: 5px solid #f94242;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* animated text */
+
+    .animate-charcter {
+        font-size: calc(16px + 2vw); /* Responsive font size */
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #fbf12c 5%,
+            #fcfdff 29%,
+            #ff8c8c 67%,
+            #65f35b 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 3s linear infinite;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0 auto; /* Centering */
+        width: max-content; /* Adjust width to the content */
+    }
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    .print-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full viewport height */
+        background: #ffffff;
+    }
+
+    .container01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        top: -80px;
+    }
+    .services {
+        background-color: rgba(7, 7, 7, 0.9);
+        padding: 50px 0;
+        color: rgb(21, 125, 216);
+        text-align: center;
+    }
+    .service-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .service-box {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: #060606;
+        padding: 20px;
+        margin: 20px 10px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .service-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        color: #fa2275;
+        background-color: #ecfd2e
+    }
+    .service-background img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .details {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .details-content {
+        background: rgb(245, 6, 6);
+        padding: 20px;
+        color: rgb(217, 243, 243);
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+    }
+    .bt1, .bt2 {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-right: 20px;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .bt2 {
+        margin-right: 0;
+    }
+    
+    .bt1:hover, .bt2:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        background-color: #2b71f5;
+    }
+    
+    #clickButton {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .cursor-effect {
+        position: absolute;
+        border-radius: 50%;
+        background: rgb(255, 11, 11);
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+        pointer-events: none;
+    }
+    
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+
+
+    /* ............ */
+
+    .animated-section {
+        background-image: url('../../public/IMG/background-photo/coresol.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .animated-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+        z-index: 1;
+    }
+    
+    .content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        animation: fadeInUp 2s ease-in-out;
+    }
+    
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+
+    /* login page */
+    /* ------------------------------------ Click on login and Sign Up to  changue and view the effect
+---------------------------------------
+*/
+
+
